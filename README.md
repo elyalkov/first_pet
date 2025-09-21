@@ -30,7 +30,6 @@
 ### 1. Клонирование репозитория
 ```bash
 git clone https://github.com/snowdenru/cinema-booking-system.git
-cd cinema-booking-system
 ```
 
 ### 2. Настройка виртуального окружения
@@ -59,7 +58,7 @@ http://localhost:8000/admin/
 - Логин (Email): admin@admin.com
 - Пароль: adminadmin
 
-### 6. Настройка базы данных (даллее - БД)
+### 6. Настройка базы данных
 Тестовая БД добавлена в репоизторий, если необходимо создать новую БД:
 - Удалите загруженную БД
 ```bash
@@ -90,23 +89,25 @@ pytest -v
 
 ```
 first_pet/
-├── cart/                        # Корзина покупок 
+├── cart/                        # Приложение "Корзина покупок" 
 │   ├── migrations/              # Миграции базы данных
 │   ├── templates/               # HTML шаблоны
 │   ├── tests/                   # Тесты
 │   ├── admin.py                 # Настройки админ-панели
 │   ├── apps.py                  # Конфигурация приложения
-│   ├── cart.py                  # 
+│   ├── cart.py                  # Логика работы корзины
+│   ├── context_processors.py    # Глобальные переменные для шаблонов
+│   ├── forms.py                 # Формы
 │   ├── models.py                # Модели данных
 │   ├── tests.py                 # Тесты
 │   ├── urls.py                  # URL-маршруты
 │   └── views.py                 # Представления
-├── first_pet/                   # 
-│   ├── asgi.py                  # 
+├── first_pet/                   # Основная директория проекта
+│   ├── asgi.py                  # ASGI конфигурация
 │   ├── settings.py              # Основные настройки проекта
 │   ├── urls.py                  # Главные URL-маршруты
-│   └── wsgi.py                  # 
-├── main/                        #  
+│   └── wsgi.py                  # WSGI конфигурация
+├── main/                        # Приложение "Главная страница"
 │   ├── migrations/              # Миграции базы данных
 │   ├── static/                  # Статические файлы
 │   ├── templates/               # HTML шаблоны
@@ -118,31 +119,31 @@ first_pet/
 │   ├── urls.py                  # URL-маршруты
 │   └── views.py                 # Представления
 ├── media/                       # Загружаемые файлы
-├── orders/                      #  
+├── orders/                      # Приложение "Заказы"
 │   ├── migrations/              # Миграции базы данных
 │   ├── templates/               # HTML шаблоны
 │   ├── tests/                   # Тесты
 │   ├── admin.py                 # Настройки админ-панели
-│   ├── forms.py 
 │   ├── apps.py                  # Конфигурация приложения
+│   ├── forms.py                 # Формы
 │   ├── models.py                # Модели данных
 │   ├── tests.py                 # Тесты
 │   ├── urls.py                  # URL-маршруты
 │   └── views.py                 # Представления
-├── users/                       #  
+├── users/                       # Приложение "Пользователи"
 │   ├── migrations/              # Миграции базы данных
 │   ├── templates/               # HTML шаблоны
 │   ├── tests/                   # Тесты
 │   ├── admin.py                 # Настройки админ-панели
 │   ├── apps.py                  # Конфигурация приложения
-│   ├── forms.py 
+│   ├── forms.py                 # Формы
 │   ├── models.py                # Модели данных
 │   ├── tests.py                 # Тесты
 │   ├── urls.py                  # URL-маршруты
 │   └── views.py                 # Представления
 ├── .env                         # Переменные окружения
-├── db.sqlite3                   # База данных
-├── manage.py                    # Управляющий скрипт
+├── db.sqlite3                   # База данных SQLite
+├── manage.py                    # Управляющий скрипт Django
 ├── pysest.ini 
-└── requirements.txt             # Зависимости
+└── requirements.txt             # Зависимости проекта
 ```
