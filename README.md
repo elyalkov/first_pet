@@ -1,6 +1,14 @@
 # E-shop Platform
 
 Онлайн-магазин с системой заказов и управления товарами
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain.svg" title="Django" alt="Django" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML5" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg" title="SQLite" alt="SQLite" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/pytest/pytest-original-wordmark.svg" title="Pytest" alt="Pytest" width="40" height="40"/>&nbsp;
+</div>
 
 ## 📌 Основные возможности
 
@@ -19,7 +27,7 @@
 
 | Компонент       | Технология                |
 |-----------------|--------------------------|
-| Backend         | Django 4.2   |
+| Backend         | Python 3.9, Django 4.2   |
 | Frontend        | HTML5, Bootstrap 5   |
 | База данных     | SQLite   |
 | Дополнительные библиотеки | Pillow, Stripe, Python-dotenv   |
